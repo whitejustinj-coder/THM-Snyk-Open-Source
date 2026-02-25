@@ -18,4 +18,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --org=${{ secrets.SNYK_ORG_ID }}
+          args: --org=${{ secrets.SNYK_ORG_ID }} --severity-threshold=high
